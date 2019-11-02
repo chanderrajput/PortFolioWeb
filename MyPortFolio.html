@@ -10,8 +10,7 @@
 
 
     <style>
-        /* top class */
-        
+     
         .me {
             text-align: left;
             background-color: #2F4F4F;
@@ -20,9 +19,7 @@
             margin-top: -10px;
             font-family: verdana;            
         }
-        
-        /* link class */
-        
+
         .me  #name {
             color: white;
             padding: 20px;
@@ -31,45 +28,42 @@
             text-decoration: none;
             display: inline-block;
             margin-right:-25px;
-
-
         }
+
         .me #name:hover{
             color: red;
         }
+
         .me #about:hover{
             color: red;
         }
+
         .me #contact:hover{
             color: red;
         }
         
         .me #about {
             color: white;
-            padding-left: 470px;
+            margin-left: 470px;
             text-align: right;
             font-size: 30px;
             text-decoration: none;   
         }
-
 
         .me #contact {
             color: white;
             padding-left:25px;
             text-align: right;
             font-size: 30px;
-            text-decoration: none;
-            
+            text-decoration: none;            
         }
+
         #link {
             color: white;
             margin-left: 20px;
         }
-
-
-        /* body class */
-        
-         .body1 {
+   
+        .body1 {
             background-color: #00BFFF;
             padding: 100px;
             margin-left: -8px;
@@ -82,8 +76,8 @@
             width: 200px;
             height: 200px;
             border-radius: 50%;
-            
         }
+
         .aboutp{
             text-align: center;
             font-size: 25px;
@@ -112,7 +106,6 @@
             margin: 3px;
             border: 0px solid;
             font-size: 20px;
-
         }
 
         .button1 {
@@ -123,13 +116,12 @@
             margin-top: 20px;
         }
 
-       
-
     </style>
     
 </head>
 
 <body>
+
     <div>
         <div class="me" id="topID" >
             <a id="name" href="#bodym">Chander Kumar</a>
@@ -143,12 +135,12 @@
 
     <div id="bodym">
         <div class="body1">
-        <img src="pic.jpeg" alt="My Picture" id="myPic">
-        <h2 style="color: white;font-size: 40px;">Chander Kumar</h2>
+	        <img src="C:\Users\CHANDER\Downloads\pic.jpeg" alt="My Picture" id="myPic">
+    
+        	<h2 style="color: white;font-size: 40px;">Chander Kumar</h2>
+        	<hr style="margin: -20px 400px 5px;padding: 1px; color: white; ">
 
-        <hr style="margin: -20px 400px 5px;padding: 1px; color: white; ">
-
-        <h3 style="color: white;">Computer Scientist,MAJU</h3>
+        	<h3 style="color: white;">Computer Scientist,MAJU</h3>
 
         </div>
     </div>
@@ -185,7 +177,6 @@
                     <li>Top CGPA holder in my batch</li>
                 </ul>   
             </div>
-
         </div>
     </div>
 
@@ -193,6 +184,7 @@
         <hr style="margin: -20px 400px -30px;padding: 1px; color: white; ">
         <h1 style="color:#2F4F4F; text-align: center;font-size:50px;">Projects</h1>
         <hr style="margin: -20px 400px 5px;padding: 1px; color: white; ">
+
         <ul style="display: inline-block; text-align: left;font-size:25px;margin-bottom: 30px;">
             <li>ATM in c language</li>
             <li><a href="https://github.com/chanderrajput/ShopingCentreWithCarPakingManagementSystem">Store Management System</a> in java</li>
@@ -216,32 +208,24 @@
 
         <button onclick="sendDetails()" class="button1">Send</button>
         
-
         <script>
-        function sendDetails() {
-            var inputVal="";
-            var count=0;
-             for(var i=0;i<3;i++){
-                var todo=document.getElementById("myInput"+i).value;
-                if(todo.length == 0) {
-                    alert("Please enter all details");
-                } else {
-                    count++;
-                    inputVal += todo+"<br>";
-                }
-             }
-             if(count==3)
-             alert("Your massage is send seccessfully");
-        }
-    </script>
-
-        
-        
+        	function sendDetails() {
+            	var inputVal="";
+            	var count=0;
+             	for(var i=0;i<3;i++){
+	                var todo=document.getElementById("myInput"+i).value;
+    	            if(todo.length == 0) {
+        	            alert("Please enter all details");
+            	    } else {
+                	    count++;
+                    	inputVal += todo+"<br>";
+	                }
+    	         }
+        	     if(count==3)
+            	 alert("Your massage is send seccessfully");
+        	}
+    	</script>
+       
     </div>
-    
-    
-
-   
 </body>
-
 </html>
